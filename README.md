@@ -1,9 +1,6 @@
 # Smart Hybrid Library Management and Automation System (SHLMAS)
 
 ## Research Proposal
-
-Welcome to the SHLMAS research repository.
-
 ## Sections
 
 1. Executive Summary
