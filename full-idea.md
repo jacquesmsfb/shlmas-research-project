@@ -14,11 +14,11 @@
 
 # Project Description
 
-The **Smart Hybrid Library Management and Automation System (SHLMAS)** is a low-cost library automation system designed for public schools that replaces manual borrowing and returning procedures with RFID-based digital transactions.
+The **Smart Hybrid Library Management and Automation System (SHLMAS)** is a low-cost library automation system designed for public schools that replaces manual borrowing and returning procedures with a hybrid RFID approach intended to reduce paperwork and simplify record keeping.
 
 Unlike traditional RFID library systems that require every physical book to have its own RFID tag, SHLMAS uses a **hybrid RFID architecture** consisting of:
 
-- RFID-enabled Student Identification Cards
+- RFID cards representing student identification
 - RFID Book Identifier Cards
 
 This approach minimizes hardware costs while still providing digital library circulation.
@@ -70,7 +70,7 @@ A borrowing transaction is completed by scanning:
 1. Student RFID ID
 2. RFID Book Identifier Card
 
-The system then records the borrowing transaction digitally.
+The system is designed to record the borrowing transaction digitally.
 
 ---
 
@@ -105,7 +105,7 @@ The project focuses on:
 For the prototype:
 
 - ESP32 connects directly to a laptop using USB.
-- The laptop performs processing and stores the records.
+- The laptop performs processing and stores the records (prototype design).
 - The prototype operates completely offline.
 - RFID is used only for identifying students and book identifier cards.
 
@@ -127,7 +127,7 @@ No Wi-Fi or cloud communication is used in the prototype.
 
 # Background
 
-Many public school libraries still rely on manual processes for managing library circulation. Borrowing and returning books are commonly recorded using handwritten logbooks or paper-based records.
+Many public school libraries still rely on manual processes for managing library circulation. Borrowing and returning books are commonly recorded using handwritten logbooks or paper-based records which increases workload and the chance of human error.
 
 These manual methods require library personnel to spend additional time recording transactions, checking records, and updating book availability.
 
@@ -199,7 +199,7 @@ Examples include:
 
 The Smart Hybrid Library Management and Automation System (SHLMAS) was proposed to simplify library circulation by digitally recording transactions using RFID technology.
 
-Instead of manually writing borrowing records, the system automatically records transactions after scanning:
+Instead of manually writing borrowing records, the system is designed to record transactions after scanning:
 
 - RFID Student ID
 - RFID Book Identifier Card
@@ -241,7 +241,7 @@ The project does not attempt to solve every aspect of library management. Its pr
 
 # General Objective
 
-To develop the **Smart Hybrid Library Management and Automation System (SHLMAS)** that automates library circulation through a low-cost hybrid RFID approach, replacing manual borrowing and returning records with digital transactions.
+To develop the **Smart Hybrid Library Management and Automation System (SHLMAS)** that automates library circulation through a low-cost hybrid RFID approach, replacing manual borrowing and returning record-keeping.
 
 ---
 
@@ -285,7 +285,7 @@ based on recorded transactions.
 
 ## 5. Maintain Borrowing Records
 
-Provide digital records of borrowing transactions that can be viewed by authorized users instead of relying on handwritten logs.
+Store digital records of library transactions.
 
 ---
 
@@ -314,7 +314,7 @@ Upon completion, SHLMAS is expected to provide a functional RFID-assisted librar
 
 - Recording borrowing transactions digitally
 - Recording return transactions digitally
-- Updating book availability
+- Updating book availability (designed)
 - Maintaining borrowing records
 - Reducing manual recording during library circulation
 
@@ -358,8 +358,8 @@ The project includes the following functions:
 
 - Borrow books
 - Return books
-- Record borrowing transactions
-- Record return transactions
+- Record borrowing transactions (designed)
+- Record return transactions (designed)
 
 ---
 
@@ -367,7 +367,7 @@ The project includes the following functions:
 
 The system identifies:
 
-- Students using RFID Student Identification Cards
+- Students using RFID cards representing student identification
 - Books using RFID Book Identifier Cards
 
 Both RFID cards are scanned during library transactions.
@@ -376,7 +376,7 @@ Both RFID cards are scanned during library transactions.
 
 ## Transaction Recording
 
-The system records transaction information digitally instead of requiring handwritten logbooks.
+The system is designed to record transaction information digitally instead of requiring handwritten logbooks.
 
 Recorded transactions are stored on the laptop during the prototype.
 
@@ -384,7 +384,7 @@ Recorded transactions are stored on the laptop during the prototype.
 
 ## Book Status
 
-The system updates the status of books based on completed transactions.
+The system is designed to update book status based on recorded transactions.
 
 Book status includes:
 
@@ -395,7 +395,7 @@ Book status includes:
 
 ## Borrowing Records
 
-The system maintains digital borrowing records for library transactions completed through the RFID system.
+The system is designed to maintain digital borrowing records for library transactions completed through the RFID system.
 
 ---
 
@@ -405,7 +405,7 @@ The prototype specifically consists of:
 
 - ESP32 microcontroller
 - RC522 RFID reader
-- RFID Student ID Cards
+- RFID Student ID Cards (RFID cards representing student identification)
 - RFID Book Identifier Cards
 - USB connection between ESP32 and laptop
 - Completely offline operation
@@ -459,7 +459,7 @@ No wireless communication is implemented in the prototype.
 
 RFID is used only for identifying:
 
-- Student ID Cards
+- Student ID Cards (RFID cards representing student identification)
 - Book Identifier Cards
 
 The prototype does not attach RFID tags directly to physical books.
@@ -471,8 +471,8 @@ The prototype does not attach RFID tags directly to physical books.
 The prototype is intended to demonstrate the core functionality of SHLMAS, specifically:
 
 - RFID-based identification
-- Digital borrowing
-- Digital returning
+- Digital borrowing (designed)
+- Digital returning (designed)
 - Offline transaction recording
 
 It is not intended to represent the complete proposed implementation of the system.
@@ -514,7 +514,7 @@ The RC522 reads RFID cards used during borrowing and returning transactions.
 
 The reader scans:
 
-- RFID Student Identification Cards
+- RFID cards representing student identification
 - RFID Book Identifier Cards
 
 ---
@@ -523,7 +523,7 @@ The reader scans:
 
 ### Purpose
 
-Each student is identified using an RFID-enabled Student ID Card.
+Each student is represented by an RFID card used as a student identifier.
 
 The card is scanned before completing a borrowing or returning transaction.
 
@@ -550,8 +550,8 @@ The laptop serves as the processing device for the prototype.
 It is responsible for:
 
 - Receiving RFID data from the ESP32
-- Processing transactions
-- Storing transaction records
+- Processing transactions (prototype software)
+- Storing transaction records (prototype testing)
 - Running the prototype software
 
 ---
@@ -596,7 +596,7 @@ Laptop
 2. The RC522 reads the RFID UID.
 3. The ESP32 receives the UID.
 4. The ESP32 sends the UID to the laptop through the USB connection.
-5. The laptop processes the transaction.
+5. The laptop processes the transaction (prototype software).
 
 ---
 
@@ -606,9 +606,9 @@ Laptop
 |-----------|---------|
 | ESP32 | Reads RFID data and sends it to the laptop |
 | RC522 | Reads RFID cards |
-| RFID Student ID Card | Identifies the student |
+| RFID Student ID Card | Represents the student (RFID card) |
 | RFID Book Identifier Card | Identifies the selected book |
-| Laptop | Processes transactions and stores records |
+| Laptop | Processes transactions and stores records (prototype) |
 | USB Cable | Communication and power |
 
 ---
@@ -646,7 +646,7 @@ The same process is used when scanning the RFID Book Identifier Card.
 - The ESP32 communicates with the laptop only through a USB connection.
 
 - Low-cost implementation
-- Digital transaction recording
+- Digital transaction recording (designed)
 - Designed for public school libraries
 
 # Phase 6 — Prototype Software
@@ -659,21 +659,21 @@ The same process is used when scanning the RFID Book Identifier Card.
 
 The SHLMAS prototype uses software running on a laptop to process RFID data received from the ESP32 through a USB connection.
 
-The software handles library transactions and stores digital records while operating completely offline.
+The prototype software is designed to process RFID data and to store transaction-related information while operating completely offline.
 
 ---
 
 # Software Responsibilities
 
-The prototype software is responsible for:
+The prototype software is designed to:
 
-- Receiving RFID data from the ESP32
-- Identifying students
-- Identifying books
-- Processing borrowing transactions
-- Processing return transactions
-- Updating book status
-- Recording library transactions
+- Receive RFID data from the ESP32
+- Identify students (based on RFID UIDs)
+- Identify books (based on RFID UIDs)
+- Process borrowing transactions (designed)
+- Process return transactions (designed)
+- Update book status (designed)
+- Record library transactions (designed)
 
 ---
 
@@ -702,37 +702,37 @@ After receiving RFID data from the ESP32, the software determines whether the sc
 - A student
 - A book identifier
 
-The software then processes the appropriate library transaction.
+The software then processes the appropriate library transaction according to the prototype design.
 
 ---
 
 # Borrowing Process
 
-For a borrowing transaction, the software performs the following tasks:
+For a borrowing transaction, the software is designed to perform the following tasks:
 
 1. Receive the Student RFID UID.
 2. Receive the Book Identifier RFID UID.
 3. Match both records.
-4. Record the borrowing transaction.
-5. Update the book status to **Borrowed**.
+4. Record the borrowing transaction (designed).
+5. Update the book status to **Borrowed** (designed).
 
 ---
 
 # Returning Process
 
-For a return transaction, the software performs the following tasks:
+For a return transaction, the software is designed to perform the following tasks:
 
 1. Receive the Student RFID UID.
 2. Receive the Book Identifier RFID UID.
-3. Locate the active borrowing record.
-4. Record the return transaction.
-5. Update the book status to **Available**.
+3. Locate the active borrowing record (designed).
+4. Record the return transaction (designed).
+5. Update the book status to **Available** (designed).
 
 ---
 
 # Transaction Records
 
-The software stores digital records for each completed transaction.
+The software is designed to store digital records for each processed transaction.
 
 Each transaction represents either:
 
@@ -743,14 +743,14 @@ Each transaction represents either:
 
 # Book Status
 
-The software maintains the current status of every registered book.
+The software is designed to maintain the current status of registered books.
 
 Possible states include:
 
 - Available
 - Borrowed
 
-The status changes automatically after each completed transaction.
+The status is intended to change based on processed transactions.
 
 ---
 
@@ -762,10 +762,10 @@ The status changes automatically after each completed transaction.
 | USB Communication | ✔ |
 | Student Identification | ✔ |
 | Book Identification | ✔ |
-| Borrowing Transactions | ✔ |
-| Returning Transactions | ✔ |
-| Digital Transaction Records | ✔ |
-| Automatic Book Status Updates | ✔ |
+| Borrowing Transactions | Designed |
+| Returning Transactions | Designed |
+| Digital Transaction Records | Designed |
+| Automatic Book Status Updates | Designed |
 | Wi-Fi | ✘ |
 | Cloud Database | ✘ |
 | Online Synchronization | ✘ |
@@ -847,13 +847,13 @@ ESP32 receives Book UID
 Send UID to Laptop (USB)
     │
     ▼
-Laptop Processes Transaction
+Laptop Processes Transaction (prototype software)
     │
     ▼
-Update Book Status
+Update Book Status (designed)
     │
     ▼
-Save Transaction Record
+Save Transaction Record (designed)
 ```
 
 ---
@@ -904,19 +904,19 @@ The ESP32 sends the Book Identifier UID to the laptop.
 
 ## Step 8
 
-The laptop processes the borrowing transaction.
+The laptop processes the borrowing transaction (prototype software).
 
 ---
 
 ## Step 9
 
-The transaction is recorded digitally.
+The system records the transaction after processing.
 
 ---
 
 ## Step 10
 
-The selected book is marked as:
+The selected book is intended to be marked as:
 
 **Borrowed**
 
@@ -952,19 +952,19 @@ ESP32 sends the Book Identifier UID to the laptop.
 
 ## Step 5
 
-The laptop locates the active borrowing record.
+The laptop locates the active borrowing record (designed).
 
 ---
 
 ## Step 6
 
-The transaction is recorded as returned.
+The system records the transaction as returned after processing.
 
 ---
 
 ## Step 7
 
-The book status becomes:
+The book status is intended to be set to:
 
 **Available**
 
@@ -991,1319 +991,9 @@ Laptop
       │
       ├── Student Identification
       ├── Book Identification
-      ├── Borrow / Return Processing
-      ├── Book Status Update
-      └── Transaction Recording
+      ├── Borrow / Return Processing (designed)
+      ├── Book Status Update (designed)
+      └── Transaction Recording (designed)
 ```
 
 ---
-
-# Transaction Sequence
-
-```text
-Student ID
-      │
-      ▼
-Book Identifier Card
-      │
-      ▼
-Transaction Processing
-      │
-      ▼
-Record Saved
-      │
-      ▼
-Book Status Updated
-```
-
----
-
-# Prototype Characteristics
-
-- RFID-assisted identification
-- USB communication only
-- Offline processing
-- Digital transaction recording
-- Automatic book status updates
-- No Wi-Fi
-- No cloud services
-- Single laptop operation
-
-# Phase 8 — Proposed Final Implementation
-
-> **Status:** Proposed Final Implementation (Future Development)
-
----
-
-# Overview
-
-The proposed final implementation of SHLMAS expands the prototype into a more complete library automation system.
-
-Unlike the prototype, which uses an ESP32 connected directly to a laptop through USB and operates completely offline, the final implementation introduces a more scalable system architecture.
-
-The prototype demonstrates the core RFID transaction process, while the final implementation focuses on improving deployment for actual school library environments.
-
----
-
-# Proposed System Architecture
-
-The final implementation is designed around three main components:
-
-1. RFID-based self-service kiosk
-2. Library management system
-3. Digital database system
-
----
-
-# Proposed Hardware Components
-
-## ESP32-Based RFID Kiosk
-
-The final implementation uses the ESP32 as the main controller of the RFID kiosk.
-
-The kiosk handles:
-
-- RFID card reading
-- Transaction processing
-- Communication with the management system
-
----
-
-## RFID Student Identification Card
-
-Students continue to use RFID-enabled identification cards for authentication.
-
-The card identifies the student during library transactions.
-
----
-
-## RFID Book Identifier Card
-
-Books continue to use RFID Book Identifier Cards instead of individual RFID tags attached directly to each physical book.
-
-The card represents the book information stored in the system.
-
----
-
-# Proposed Software System
-
-The final implementation expands the prototype software into a complete library management platform.
-
-The system would manage:
-
-- Student records
-- Book records
-- Borrowing records
-- Returning records
-- Book availability
-
----
-
-# Proposed Database System
-
-The final implementation uses a database to store library information.
-
-The database would contain:
-
-- Student information
-- Book information
-- Transaction records
-- Borrowing status
-
----
-
-# Proposed Communication
-
-Unlike the prototype's USB communication, the final implementation proposes communication between the ESP32 kiosk and the management system.
-
-The system is intended to allow:
-
-- Automatic transaction transfer
-- Centralized record management
-- Easier monitoring of library activity
-
----
-
-# Proposed User Workflow
-
-```text
-Student
-    │
-    ▼
-Tap RFID Student ID
-    │
-    ▼
-Tap RFID Book Identifier Card
-    │
-    ▼
-ESP32 RFID Kiosk
-    │
-    ▼
-Library Management System
-    │
-    ▼
-Database Update
-    │
-    ▼
-Transaction Completed
-```
-
----
-
-# Improvements Compared to Prototype
-
-| Feature | Prototype | Proposed Final Implementation |
-|---|---|---|
-| Processing Device | Laptop | Dedicated system architecture |
-| Communication | USB | System communication |
-| Operation | Offline prototype | Expanded deployment system |
-| Database | Local prototype storage | Centralized database |
-| Deployment | Testing environment | School library environment |
-
----
-
-# Purpose of Final Implementation
-
-The proposed final implementation aims to transform SHLMAS from a working prototype into a deployable school library automation system.
-
-The prototype validates the RFID transaction concept, while the final implementation focuses on scalability, easier management, and practical use in school libraries.
-
-# Phase 9 — System Architecture
-
-> **Status:** Prototype and Proposed Final Implementation Separation
-
----
-
-# Overview
-
-The SHLMAS architecture is divided into two versions:
-
-1. Prototype Architecture
-2. Proposed Final Implementation Architecture
-
-The prototype focuses on validating the RFID-based library transaction process, while the proposed final implementation expands the system for a more complete library environment.
-
----
-
-# A. Prototype Architecture
-
-> **Current Implementation**
-
-The prototype architecture uses a direct connection between the RFID hardware and a laptop.
-
-```text
-RFID Student ID Card
-          │
-          ▼
-RC522 RFID Reader
-          │
-          ▼
-ESP32 Microcontroller
-          │
-       USB Cable
-          │
-          ▼
-Laptop
-          │
-          ▼
-Transaction Processing
-          │
-          ▼
-Record Storage
-```
-
----
-
-# Prototype Component Roles
-
-## RFID Student ID Card
-
-Purpose:
-
-- Provides student identification
-- Sends RFID UID when scanned
-
----
-
-## RFID Book Identifier Card
-
-Purpose:
-
-- Represents the selected book
-- Provides book identification through RFID scanning
-
----
-
-## RC522 RFID Reader
-
-Purpose:
-
-- Reads RFID card information
-- Transfers RFID data to the ESP32
-
----
-
-## ESP32
-
-Purpose:
-
-- Receives RFID data from RC522
-- Sends RFID information to the laptop through USB
-
----
-
-## Laptop
-
-Purpose:
-
-- Processes transactions
-- Stores records
-- Runs the prototype software
-
----
-
-# Prototype Data Flow
-
-```text
-Card Scan
-    │
-    ▼
-RFID UID Reading
-    │
-    ▼
-ESP32 Processing
-    │
-    ▼
-USB Transfer
-    │
-    ▼
-Laptop Processing
-    │
-    ▼
-Transaction Record
-```
-
----
-
-# B. Proposed Final Implementation Architecture
-
-> **Future Development**
-
-The proposed final implementation expands the system by separating the RFID kiosk, management system, and database.
-
-```text
-RFID Student ID Card
-          │
-          ▼
-RFID Reader
-
-RFID Book Identifier Card
-          │
-          ▼
-
-ESP32 RFID Kiosk
-          │
-          ▼
-
-Library Management System
-          │
-          ▼
-
-Database
-          │
-          ▼
-
-Library Records
-```
-
----
-
-# Proposed Final Component Roles
-
-## RFID Kiosk
-
-Purpose:
-
-- Handles RFID scanning
-- Provides the transaction interface
-- Acts as the connection between users and the library system
-
----
-
-## Library Management System
-
-Purpose:
-
-- Processes library transactions
-- Manages book and student records
-- Handles borrowing and returning operations
-
----
-
-## Database
-
-Purpose:
-
-- Stores library information
-- Maintains transaction history
-- Stores book availability records
-
----
-
-# Architecture Difference
-
-| Component | Prototype | Proposed Final Implementation |
-|---|---|---|
-| RFID Reading | RC522 + ESP32 | RC522 + ESP32 kiosk |
-| Processing | Laptop | Library management system |
-| Communication | USB | System communication |
-| Storage | Local prototype storage | Database system |
-| Purpose | Testing functionality | Deployment concept |
-
----
-
-# Main Architectural Idea
-
-The main concept of SHLMAS remains the same in both versions:
-
-```text
-Student RFID Identification
-            +
-Book RFID Identification
-            │
-            ▼
-Digital Library Transaction
-```
-
-The difference is the scale and deployment method.
-
-# Phase 10 — RFID Identification System
-
-> **Status:** Prototype (Current Implementation) + Proposed Final Implementation
-
----
-
-# Overview
-
-The Smart Hybrid Library Management and Automation System (SHLMAS) uses a hybrid RFID identification method.
-
-Instead of placing an RFID tag directly on every physical book, the system separates identification into two RFID components:
-
-1. RFID Student Identification Card
-2. RFID Book Identifier Card
-
-This approach allows the system to identify users and books while reducing the number of RFID tags required.
-
----
-
-# RFID Components
-
-## 1. RFID Student Identification Card
-
-### Purpose
-
-The RFID Student Identification Card identifies the student performing a library transaction.
-
----
-
-### Usage
-
-The student scans their RFID card before borrowing or returning a book.
-
-The system uses the RFID information to determine:
-
-- Who is performing the transaction
-- Which student account should be updated
-
----
-
-### Transaction Role
-
-```text
-Student
-   │
-   ▼
-RFID Student ID Card
-   │
-   ▼
-Student Identification
-```
-
----
-
-# 2. RFID Book Identifier Card
-
-### Purpose
-
-The RFID Book Identifier Card represents the book being borrowed or returned.
-
----
-
-### Usage
-
-Instead of attaching RFID tags directly to every physical book, each book is represented by an RFID card.
-
-The card contains the identifier used by the system to locate the corresponding book record.
-
----
-
-### Transaction Role
-
-```text
-Book
-   │
-   ▼
-RFID Book Identifier Card
-   │
-   ▼
-Book Identification
-```
-
----
-
-# Hybrid RFID Concept
-
-The SHLMAS hybrid approach works by combining:
-
-```text
-Student RFID Card
-        +
-Book Identifier RFID Card
-        │
-        ▼
-Library Transaction
-```
-
-Both identifiers are required to complete a borrowing or returning transaction.
-
----
-
-# Borrowing Identification Flow
-
-```text
-Step 1:
-Student scans RFID Student ID
-
-        ▼
-
-Step 2:
-System identifies student
-
-        ▼
-
-Step 3:
-Student scans RFID Book Identifier Card
-
-        ▼
-
-Step 4:
-System identifies selected book
-
-        ▼
-
-Step 5:
-Transaction is recorded
-```
-
----
-
-# Returning Identification Flow
-
-```text
-Step 1:
-Student scans RFID Student ID
-
-        ▼
-
-Step 2:
-Student scans RFID Book Identifier Card
-
-        ▼
-
-Step 3:
-System finds borrowing record
-
-        ▼
-
-Step 4:
-Return transaction is recorded
-```
-
----
-
-# Why Hybrid RFID Is Used
-
-The system uses a hybrid RFID design to avoid attaching an individual RFID tag to every physical book.
-
-Traditional item-level RFID requires:
-
-```text
-Book 1 → RFID Tag
-Book 2 → RFID Tag
-Book 3 → RFID Tag
-...
-```
-
-SHLMAS uses:
-
-```text
-Student → RFID Student ID
-
-Book Collection → RFID Book Identifier Cards
-```
-
----
-
-# Prototype RFID Implementation
-
-The prototype uses:
-
-- RC522 RFID Reader
-- ESP32 Microcontroller
-- RFID Student ID Cards
-- RFID Book Identifier Cards
-
-The RFID reader sends scanned card information to the ESP32, which transfers the data to the laptop through USB.
-
----
-
-# Final Implementation RFID Concept
-
-The proposed final implementation maintains the same RFID identification concept but integrates it into a larger library management system.
-
-The core transaction remains:
-
-```text
-Identify Student
-        +
-Identify Book
-        │
-        ▼
-Complete Library Transaction
-```
-
----
-
-# RFID System Summary
-
-| Component | Purpose |
-|---|---|
-| RFID Student ID Card | Identifies the borrower |
-| RFID Book Identifier Card | Identifies the selected book |
-| RC522 Reader | Reads RFID information |
-| ESP32 | Processes RFID input |
-| Laptop/System | Handles transaction processing |
-
-# Phase 11 — Library Transaction System
-
-> **Status:** Prototype (Current Implementation)
-
----
-
-# Overview
-
-The SHLMAS prototype focuses on automating the basic library circulation process through RFID-based identification.
-
-The transaction system manages two primary operations:
-
-1. Borrowing
-2. Returning
-
-Each operation requires identifying both the student and the book involved in the transaction.
-
----
-
-# Transaction Requirements
-
-A library transaction requires:
-
-## Student Identification
-
-The system must identify the student using:
-
-- RFID Student Identification Card
-
----
-
-## Book Identification
-
-The system must identify the selected book using:
-
-- RFID Book Identifier Card
-
----
-
-# Borrowing Transaction
-
-## Purpose
-
-The borrowing transaction records when a student takes a book from the library.
-
----
-
-# Borrowing Process
-
-```text
-Student RFID Scan
-        │
-        ▼
-Student Identified
-        │
-        ▼
-Book Identifier Card Scan
-        │
-        ▼
-Book Identified
-        │
-        ▼
-Borrowing Record Created
-        │
-        ▼
-Book Status Updated
-```
-
----
-
-# Borrowing Data Flow
-
-```text
-RFID Student ID
-        │
-        ▼
-Student Record Lookup
-
-RFID Book Identifier Card
-        │
-        ▼
-Book Record Lookup
-
-        │
-
-        ▼
-
-Transaction Saved
-```
-
----
-
-# Borrowing Result
-
-After a successful borrowing transaction:
-
-- The student is recorded as the borrower.
-- The selected book is recorded as borrowed.
-- A transaction record is created.
-
----
-
-# Returning Transaction
-
-## Purpose
-
-The returning transaction records when a student returns a borrowed book.
-
----
-
-# Returning Process
-
-```text
-Student RFID Scan
-        │
-        ▼
-Student Identified
-        │
-        ▼
-Book Identifier Card Scan
-        │
-        ▼
-Book Identified
-        │
-        ▼
-Existing Borrow Record Located
-        │
-        ▼
-Return Record Created
-        │
-        ▼
-Book Status Updated
-```
-
----
-
-# Returning Data Flow
-
-```text
-RFID Student ID
-        │
-        ▼
-Student Record Lookup
-
-RFID Book Identifier Card
-        │
-        ▼
-Book Record Lookup
-
-        │
-
-        ▼
-
-Borrow Record Found
-
-        │
-
-        ▼
-
-Return Transaction Saved
-```
-
----
-
-# Book Status Management
-
-The system tracks the availability of books based on transactions.
-
-Possible book states:
-
-```text
-Available
-    │
-    │ Borrow Transaction
-    ▼
-Borrowed
-    │
-    │ Return Transaction
-    ▼
-Available
-```
-
----
-
-# Transaction Records
-
-Each completed transaction creates a digital record.
-
-Transaction records contain information related to:
-
-- Student involved
-- Book involved
-- Transaction type
-- Transaction status
-
----
-
-# Prototype Transaction Flow
-
-```text
-User
- │
- ▼
-Scan RFID Student ID
- │
- ▼
-Scan RFID Book Identifier Card
- │
- ▼
-ESP32 Receives RFID Data
- │
- ▼
-USB Transfer to Laptop
- │
- ▼
-Software Processes Transaction
- │
- ▼
-Record Stored
-```
-
----
-
-# Transaction System Characteristics
-
-| Feature | Status |
-|---|---|
-| RFID Student Identification | Implemented |
-| RFID Book Identification | Implemented |
-| Borrowing Process | Implemented Concept |
-| Returning Process | Implemented Concept |
-| Digital Records | Implemented Concept |
-| Offline Operation | Implemented |
-| USB Communication | Implemented |
-
----
-
-# Purpose of the Transaction System
-
-The transaction system is the core functionality of SHLMAS.
-
-It demonstrates that RFID technology can replace manual library recording by allowing students and books to be digitally identified during circulation.
-
-# Phase 12 — Data Management System
-
-> **Status:** Prototype (Current Implementation) + Proposed Final Implementation
-
----
-
-# Overview
-
-The SHLMAS data management system handles the storage and organization of information generated during library transactions.
-
-The prototype focuses on storing transaction information locally through the laptop, while the proposed final implementation expands this into a complete library database system.
-
----
-
-# Prototype Data Management
-
-> **Current Implementation**
-
-The prototype uses the laptop as the main processing and storage device.
-
-The laptop is responsible for:
-
-- Receiving RFID data from the ESP32
-- Processing student identification
-- Processing book identification
-- Recording transactions
-- Managing book status
-
----
-
-# Prototype Data Flow
-
-```text
-RFID Scan
-    │
-    ▼
-ESP32
-    │
- USB Connection
-    │
-    ▼
-Laptop Software
-    │
-    ├── Identify Student
-    ├── Identify Book
-    ├── Process Transaction
-    └── Save Record
-```
-
----
-
-# Prototype Stored Information
-
-The system records information related to:
-
-## Student Records
-
-Used to identify the student performing the transaction.
-
-Example information:
-
-- Student RFID identifier
-- Student account information
-
----
-
-## Book Records
-
-Used to identify the selected book.
-
-Example information:
-
-- Book RFID identifier
-- Book information
-- Current availability status
-
----
-
-## Transaction Records
-
-Used to store completed library activities.
-
-Example information:
-
-- Borrow transaction
-- Return transaction
-- Student involved
-- Book involved
-
----
-
-# Proposed Final Data Management
-
-> **Future Development**
-
-The proposed final implementation expands the storage system into a structured database.
-
-The database manages:
-
-- Student information
-- Book information
-- Borrowing records
-- Returning records
-- Book availability
-
----
-
-# Proposed Database Structure
-
-## Student Table
-
-Purpose:
-
-Stores information about registered users.
-
-```text
-Student
-│
-├── Student ID
-├── RFID Identifier
-└── Student Information
-```
-
----
-
-## Book Table
-
-Purpose:
-
-Stores information about library books.
-
-```text
-Book
-│
-├── Book ID
-├── Book Identifier RFID
-├── Book Information
-└── Availability Status
-```
-
----
-
-## Transaction Table
-
-Purpose:
-
-Stores library activity records.
-
-```text
-Transaction
-│
-├── Transaction ID
-├── Student ID
-├── Book ID
-├── Transaction Type
-└── Transaction Record
-```
-
----
-
-# Relationship Between Data
-
-```text
-Student
-    │
-    │ performs
-    ▼
-
-Transaction
-
-    ▲
-    │ involves
-
-Book
-```
-
----
-
-# Data Management Workflow
-
-```text
-Student RFID Scan
-        │
-        ▼
-Student Record Search
-
-Book RFID Scan
-        │
-        ▼
-Book Record Search
-
-        │
-
-        ▼
-
-Transaction Created
-
-        │
-
-        ▼
-
-Book Status Updated
-```
-
----
-
-# Purpose of Data Management
-
-The data management system allows SHLMAS to:
-
-- Replace manual library records
-- Maintain organized transaction history
-- Track borrowed books
-- Monitor book availability
-- Provide digital records of library activity
-
----
-
-# Data Management Summary
-
-| Component | Prototype | Proposed Final Implementation |
-|---|---|---|
-| Storage Device | Laptop | Database System |
-| Operation | Offline | Expanded System |
-| Student Records | Local Processing | Structured Records |
-| Book Records | Local Processing | Structured Records |
-| Transaction Records | Local Storage | Database Storage |
-
-# Phase 13 — System Operation Flow
-
-> **Status:** Prototype (Current Implementation)
-
----
-
-# Overview
-
-The SHLMAS prototype operation flow describes how users interact with the hardware and software components during library transactions.
-
-The process begins when a student presents an RFID card and ends when the transaction is recorded by the laptop system.
-
----
-
-# Complete System Flow
-
-```text
-Student
-   │
-   ▼
-RFID Card Presentation
-   │
-   ▼
-RC522 RFID Reader
-   │
-   ▼
-ESP32 Microcontroller
-   │
-   ▼
-USB Communication
-   │
-   ▼
-Laptop Processing System
-   │
-   ▼
-Transaction Verification
-   │
-   ▼
-Record Storage
-   │
-   ▼
-Transaction Completed
-```
-
----
-
-# Borrowing Operation Flow
-
-## 1. Student Identification
-
-The student begins the transaction by scanning the RFID Student Identification Card.
-
-```text
-Student
-   │
-   ▼
-RFID Student ID Card
-```
-
-The RFID reader captures the card identifier.
-
----
-
-## 2. RFID Data Transfer
-
-The RC522 RFID reader sends the scanned information to the ESP32.
-
-```text
-RC522
-   │
-   ▼
-ESP32
-```
-
----
-
-## 3. USB Communication
-
-The ESP32 transfers the RFID information to the laptop.
-
-```text
-ESP32
-   │
- USB
-   │
-   ▼
-Laptop
-```
-
----
-
-## 4. Book Identification
-
-The student scans the RFID Book Identifier Card.
-
-```text
-Book Identifier Card
-   │
-   ▼
-RC522
-   │
-   ▼
-ESP32
-```
-
----
-
-## 5. Transaction Processing
-
-The laptop software receives both identifiers:
-
-```text
-Student Identifier
-        +
-Book Identifier
-```
-
-The system processes the borrowing request.
-
----
-
-## 6. Record Creation
-
-The borrowing transaction is saved.
-
-The book status changes:
-
-```text
-Available
-     │
-     ▼
-Borrowed
-```
-
----
-
-# Returning Operation Flow
-
-## 1. Student Identification
-
-The student scans the RFID Student Identification Card.
-
----
-
-## 2. Book Identification
-
-The student scans the RFID Book Identifier Card.
-
----
-
-## 3. Transaction Matching
-
-The system searches for the existing borrowing record.
-
----
-
-## 4. Return Processing
-
-The system records the return transaction.
-
----
-
-## 5. Status Update
-
-The book status changes:
-
-```text
-Borrowed
-     │
-     ▼
-Available
-```
-
----
-
-# System Interaction Diagram
-
-```text
-              Student
-
-                 │
-
-                 ▼
-
-        RFID Student ID Card
-
-                 │
-
-                 ▼
-
-          RFID Reader (RC522)
-
-                 │
-
-                 ▼
-
-              ESP32
-
-                 │
-
-             USB Serial
-
-                 │
-
-                 ▼
-
-              Laptop
-
-                 │
-
-                 ▼
-
-       Library Transaction System
-
-                 │
-
-                 ▼
-
-          Stored Record
-```
-
----
-
-# Operation Characteristics
-
-| Operation | Method |
-|---|---|
-| Student Identification | RFID Card Scan |
-| Book Identification | RFID Book Identifier Card Scan |
-| Hardware Processing | ESP32 |
-| Communication | USB |
-| Transaction Processing | Laptop |
-| Storage | Local Prototype Storage |
-| Internet Requirement | None |
-
----
-
-# Purpose of the Operation Flow
-
-The operation flow demonstrates the main function of SHLMAS:
-
-> Using RFID identification to replace manual library circulation recording with a faster digital transaction process.
