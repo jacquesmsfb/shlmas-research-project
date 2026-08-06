@@ -1,149 +1,169 @@
 # 4. Theoretical Framework
+
 ## Overview of Theoretical Foundation
-The development, implementation, and evaluation of the **Smart Hybrid Library Management and Automation System (SHLMAS)** are anchored on established technology adoption theories. Introducing an automated hardware-software system into a traditional school library environment requires understanding both human behavioral factors and organizational dynamics. Users must accept the interface, while educational institutions must be willing to integrate the system into their daily operations.
-To address these requirements, the theoretical framework of SHLMAS combines two complementary models: the **Technology Acceptance Model (TAM)** formulated by Davis (1989) and the **Diffusion of Innovations Theory** developed by Rogers (2003).
-The Technology Acceptance Model provides a framework for evaluating individual user acceptance among students and library personnel, while the Diffusion of Innovations Theory explains how the system's innovative characteristics support institutional adoption within public basic education schools.
+
+The development, implementation, and evaluation of the **Smart Hybrid Library Management and Automation System (SHLMAS)** are anchored on established technology adoption theories. Introducing an automated hardware-software system into a traditional school library environment requires an understanding of both human behavioral factors and organizational dynamics. Individuals must accept the interface, and the educational institution must be willing to integrate the system into daily routines.
+
+To address these dual requirements, the theoretical framework for SHLMAS combines two complementary models: the **Technology Acceptance Model (TAM)** formulated by Davis (1989) and the **Diffusion of Innovations Theory** developed by Rogers (2003). While TAM provides a framework for evaluating individual user acceptance among students and library personnel, the Diffusion of Innovations Theory offers an analytical perspective on how the system's innovative design characteristics facilitate institutional adoption within public basic education schools.
+
 ---
+
 # Technology Acceptance Model (TAM)
+
 ## Introduction
-The **Technology Acceptance Model (TAM)**, introduced by Fred D. Davis in 1989, is an information systems theory designed to explain how users accept and utilize new technologies. TAM proposes that an individual's intention to use a system is primarily influenced by two core factors:
-1. **Perceived Usefulness (PU)**  
-2. **Perceived Ease of Use (PEOU)**  
+
+The **Technology Acceptance Model (TAM)**, introduced by Fred D. Davis in 1989, is an information systems theory designed to explain how users accept and utilize new technologies. TAM proposes that an individual's behavioral intention to use a system is primarily influenced by two major cognitive factors:
+
+1. **Perceived Usefulness (PU)**
+2. **Perceived Ease of Use (PEOU)**
+
 (Davis, 1989)
 
-+———————————————————————————–+
-|                        TECHNOLOGY ACCEPTANCE MODEL (TAM)                          |
-|                               (Davis, 1989)                                       |
-|                                                                                   |
-|  +—————————+              +–––––––––––––––––+  |
-|  | Perceived Usefulness (PU) |              |   Perceived Ease of Use (PEOU)   |  |
-|  |                           |              |                                  |  |
-|  | • Faster borrowing        |              | • Tap-and-go RFID workflow      |  |
-|  | • Automated records       |              | • Zero manual handwriting       |  |
-|  | • Real-time book status   |              | • Minimal user training         |  |
-|  +———––+———––+              +––––––––+—————–+  |
-|                |                                             |                    |
-|                +———————+———————–+                    |
-|                                      |                                            |
-|                                      v                                            |
-|                     +–––––––––––––––––+                          |
-|                     | System Acceptance & Usage        |                          |
-|                     | (Students & Library Personnel)   |                          |
-|                     +–––––––––––––––––+                          |
-+———————————————————————————–+
+## TAM Framework Applied to SHLMAS
+
+| TAM Construct | Application in SHLMAS |
+|---|---|
+| **Perceived Usefulness (PU)** | The belief that SHLMAS improves library operations and increases efficiency. |
+| Faster borrowing | RFID scanning reduces transaction time compared to manual logbooks. |
+| Automated records | Transactions are digitally stored without handwritten entries. |
+| Real-time book status | Availability records are updated immediately after transactions. |
+| **Perceived Ease of Use (PEOU)** | The belief that SHLMAS requires minimal effort to operate. |
+| Tap-and-go RFID workflow | Users only scan their student card and book identifier card. |
+| Zero manual handwriting | Eliminates physical circulation logs. |
+| Minimal user training | Simple interaction allows students and staff to quickly understand the system. |
+| **System Acceptance and Usage** | Increased usefulness and ease of use encourage successful adoption of SHLMAS. |
 
 ---
+
 ## Perceived Usefulness (PU)
-Davis (1989) defines **Perceived Usefulness** as the degree to which a person believes that using a specific system improves their performance or efficiency.
-Within SHLMAS, perceived usefulness applies to both students and library personnel.
+
+Davis (1989) defines **Perceived Usefulness** as the degree to which an individual believes that using a specific system enhances their performance or productivity.
+
+Within SHLMAS, Perceived Usefulness applies to both students and library personnel.
+
 ### Students
-For students, SHLMAS improves usefulness by reducing the time required for borrowing and returning books. Replacing manual logbook writing with RFID scanning eliminates long waiting periods at circulation counters and allows students to complete transactions more efficiently.
+
+SHLMAS increases usefulness by improving the speed and convenience of borrowing and returning library materials. Replacing manual logbook writing with RFID scanning minimizes waiting time, reduces circulation delays, and allows students to complete transactions efficiently during limited school breaks and study periods.
+
 ### Library Personnel
-For library personnel, SHLMAS provides operational benefits by automating transaction recording, updating book availability in real time, and removing repetitive manual ledger maintenance. This reduces administrative workload and minimizes recording errors.
-When users recognize that SHLMAS directly solves the inefficiencies of traditional circulation methods, their perception of system usefulness increases, encouraging acceptance and continued use.
+
+For librarians and teacher-librarians, SHLMAS provides operational benefits by automatically recording transactions, updating book availability, and maintaining digital borrowing histories. This reduces repetitive administrative tasks, minimizes human recording errors, and allows personnel to focus more on student support and library management.
+
+When users recognize that SHLMAS directly solves existing circulation problems, their perception of system usefulness increases, encouraging technology acceptance (Davis, 1989).
+
 ---
+
 ## Perceived Ease of Use (PEOU)
-**Perceived Ease of Use** refers to the degree to which a person believes that operating a system requires minimal effort (Davis, 1989).
-Complex or difficult technologies may discourage adoption even when they provide significant benefits. Therefore, SHLMAS prioritizes simplicity through its physical RFID interaction workflow.
-The borrowing and returning process follows a straightforward sequence:
 
-Tap Student RFID Card
-↓
-Tap Book RFID Identifier Card
-↓
-Automatic Transaction Recording
+**Perceived Ease of Use** refers to the degree to which an individual believes that operating a system requires minimal physical and mental effort (Davis, 1989).
 
-Users do not need to navigate complicated software interfaces, manually enter accession numbers, or write information in physical logbooks. This simple interaction reduces technical barriers and allows students and library staff to operate the system with minimal training.
+SHLMAS incorporates ease of use through a simplified RFID-based workflow. The borrowing and returning process follows a straightforward interaction:
+
+1. Scan student RFID identification card.
+2. Scan RFID book identifier card.
+3. Automatically record the transaction.
+
+Users do not need to manually write information, type accession numbers, or navigate complex interfaces. This reduces technical barriers and allows students and library personnel with limited technological experience to operate the system effectively.
+
 ---
+
 ## TAM Relationship to SHLMAS
-According to Davis (1989), Perceived Ease of Use influences Perceived Usefulness because systems that require less effort allow users to achieve tasks more effectively.
-In SHLMAS, maximizing both usefulness and ease of use promotes positive user attitudes, increasing acceptance and reducing resistance toward automated library technology.
+
+According to Davis (1989), Perceived Ease of Use contributes to Perceived Usefulness because systems that require less effort allow users to accomplish tasks more efficiently.
+
+In SHLMAS, combining usefulness and simplicity creates a positive user experience. Faster transactions, reduced workload, and simplified interaction increase user acceptance and reduce resistance toward adopting automated library systems.
+
 ---
+
 # Diffusion of Innovations Theory
+
 ## Introduction
-The **Diffusion of Innovations Theory**, developed by Everett M. Rogers (2003), explains how new technologies and ideas spread within social systems and organizations.
-Rogers proposed that adoption depends on how potential users perceive specific characteristics of an innovation.
 
-+———————————————————————————–+
-|                        DIFFUSION OF INNOVATIONS THEORY                            |
-|                               (Rogers, 2003)                                      |
-|                                                                                   |
-|  Innovation Attributes Influencing Adoption:                                      |
-|                                                                                   |
-|  1. Relative Advantage                                                            |
-|     → Faster and more accurate than manual logging.                               |
-|                                                                                   |
-|  2. Compatibility                                                                 |
-|     → Works with existing student RFID identification systems.                    |
-|                                                                                   |
-|  3. Complexity                                                                    |
-|     → Simple tap-based workflow reduces technical barriers.                       |
-|                                                                                   |
-|  4. Trialability and Observability                                                |
-|     → Prototype allows testing and visible evaluation of results.                  |
-|                                                                                   |
-+———————————————————————————–+
+The **Diffusion of Innovations Theory**, developed by Everett M. Rogers (2003), explains how new technologies and ideas spread within organizations and communities. Rogers proposed that adoption depends on how potential users perceive specific characteristics of an innovation.
+
+## Innovation Characteristics Applied to SHLMAS
+
+| Innovation Attribute | Application in SHLMAS |
+|---|---|
+| **Relative Advantage** | SHLMAS improves upon manual logbooks by providing faster transactions, accurate digital records, and automated tracking. |
+| **Compatibility** | SHLMAS integrates with existing school workflows and RFID-based student identification systems. |
+| **Complexity** | The simple tap-based RFID process minimizes difficulty for students and staff. |
+| **Trialability** | Schools can test the prototype before committing to full implementation. |
+| **Observability** | Improvements such as reduced transaction time and accurate records can be directly measured and observed. |
 
 ---
-# Innovation Characteristics Applied to SHLMAS
-Rogers (2003) identifies several innovation characteristics that influence adoption. The following attributes directly apply to SHLMAS.
----
+
 ## Relative Advantage
-Relative advantage refers to the degree to which an innovation is perceived as better than the existing method (Rogers, 2003).
-SHLMAS provides advantages over manual circulation systems by offering:
-- Faster RFID-based transactions
-- Automatic digital record creation
-- Real-time book availability updates
-- Reduced administrative workload
-Additionally, the hybrid RFID model provides financial advantages compared to traditional item-level RFID systems because it avoids placing RFID tags on every physical book.
+
+Relative advantage refers to the degree to which an innovation is perceived as better than the system it replaces (Rogers, 2003).
+
+SHLMAS provides advantages over traditional manual circulation systems by offering:
+
+- Faster RFID-based transactions.
+- Automated digital record keeping.
+- Improved borrowing accuracy.
+- Reduced workload for library personnel.
+
+Additionally, the hybrid RFID model provides a financial advantage compared with conventional RFID systems because it eliminates the need to attach individual RFID tags to every physical book.
+
 ---
+
 ## Compatibility
-Compatibility refers to how well an innovation fits existing practices, values, and operational requirements (Rogers, 2003).
-SHLMAS is designed to integrate with existing school environments by utilizing RFID-based student identification cards. This reduces adoption barriers because schools do not need to completely replace existing identification systems.
+
+Compatibility refers to how well an innovation aligns with existing values, experiences, and operational requirements of potential adopters (Rogers, 2003).
+
+SHLMAS is designed specifically for public basic education environments. The system can integrate with existing student identification processes and requires minimal changes to current library procedures.
+
+By maintaining a familiar borrowing workflow while replacing manual recording with automation, SHLMAS improves compatibility with existing school operations.
+
 ---
+
 ## Complexity
-Complexity refers to how difficult an innovation is perceived to understand and operate (Rogers, 2003).
-Public schools often have limited technical support, making highly complex systems difficult to maintain. SHLMAS reduces complexity through:
-- ESP32-based embedded hardware
-- Simple RFID card interaction
-- Automated transaction processing
-The tap-based workflow allows both students and staff to operate the system without advanced technical knowledge.
+
+Complexity describes how difficult an innovation is perceived to understand and use (Rogers, 2003).
+
+SHLMAS reduces complexity through:
+
+- A simple RFID scanning process.
+- A dedicated hardware interface.
+- Minimal user interaction requirements.
+- Automated database processing.
+
+The ESP32-based kiosk architecture allows the system to function as a self-contained solution that does not require advanced technical knowledge from daily users.
+
 ---
+
 ## Trialability and Observability
-Trialability refers to the ability to test an innovation before full adoption, while observability refers to how visible the results of the innovation are to users and decision-makers (Rogers, 2003).
-SHLMAS supports trialability through a standalone prototype that can be tested within a school library environment without requiring complete infrastructure replacement.
-The system's improvements—such as faster transactions, reduced errors, and improved record accuracy—can be directly observed by administrators and library personnel, encouraging wider adoption.
+
+Trialability refers to the ability to test an innovation before full adoption, while observability refers to how visible its benefits are to potential adopters (Rogers, 2003).
+
+SHLMAS supports trialability because schools can deploy the prototype within a controlled library environment before expanding implementation.
+
+The system also provides observable improvements, including:
+
+- Faster borrowing and returning transactions.
+- Reduced manual workload.
+- More accurate circulation records.
+- Improved monitoring of library resources.
+
+These visible benefits help administrators evaluate the effectiveness of SHLMAS before wider adoption.
+
 ---
+
 # Relationship Between Theories and SHLMAS
+
 The Technology Acceptance Model and Diffusion of Innovations Theory provide complementary perspectives for evaluating SHLMAS.
 
-+———————————————————————————–+
-|                        INTEGRATED THEORETICAL FRAMEWORK                           |
-+———————————————————————————–+
-|                                                                                   |
-|     INDIVIDUAL ACCEPTANCE                         INSTITUTIONAL ADOPTION           |
-|     (Technology Acceptance Model)                 (Diffusion of Innovations)       |
-|                                                                                   |
-|     • Perceived Usefulness (PU)                   • Relative Advantage             |
-|     • Perceived Ease of Use (PEOU)                • Compatibility                  |
-|                                                    • Low Complexity                |
-|                                                    • Trialability & Observability  |
-|                                                                                   |
-+—————————————–+—————————————–+
-|
-v
-+———————————————————————————–+
-|                         SUCCESSFUL SHLMAS IMPLEMENTATION                          |
-|                                                                                   |
-| • Increased user acceptance among students and staff                              |
-| • Practical adoption within public basic education schools                        |
-| • Sustainable library automation solution                                          |
-+———————————————————————————–+
+| Evaluation Level | Theory | Factors Applied to SHLMAS |
+|---|---|---|
+| **Individual User Acceptance** | Technology Acceptance Model (TAM) | Perceived Usefulness and Perceived Ease of Use |
+| **Institutional Adoption** | Diffusion of Innovations Theory | Relative Advantage, Compatibility, Complexity, Trialability, and Observability |
+| **Expected Outcome** | SHLMAS Implementation Success | Increased user acceptance, practical adoption, and sustainable library automation |
 
-TAM focuses on the **individual level**, explaining how students and library personnel accept SHLMAS based on usefulness and ease of operation.
-Meanwhile, the Diffusion of Innovations Theory focuses on the **institutional level**, explaining why schools may adopt SHLMAS based on its advantages, compatibility, simplicity, and feasibility.
-Together, these theories allow SHLMAS to be evaluated not only as a functional technological system but also as a practical, user-friendly, and sustainable solution for public school library automation.
 ---
-## References Used
-- Davis, F. D. (1989). *Perceived usefulness, perceived ease of use, and user acceptance of information technology*. MIS Quarterly, 13(3), 319–340.
-- Rogers, E. M. (2003). *Diffusion of Innovations* (5th ed.). Free Press.
+
+TAM focuses on the **individual level**, explaining how students and library personnel accept SHLMAS based on its usefulness and ease of operation.
+
+Meanwhile, Diffusion of Innovations Theory focuses on the **institutional level**, explaining why schools may adopt SHLMAS based on its advantages, compatibility, simplicity, and feasibility.
+
+By combining these theoretical perspectives, SHLMAS is evaluated not only as a functional technological solution but also as a practical and sustainable innovation suitable for public basic education libraries.
