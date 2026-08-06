@@ -1,118 +1,110 @@
 # Significance of the Study
 
-The Smart Hybrid Library Management and Automation System (SHLMAS) aims to modernize school library operations by integrating a web-based portal, self-service borrowing kiosk, smart return box, centralized database, and analytics dashboard into a single ecosystem.
+The development of the **Smart Hybrid Library Management and Automation System (SHLMAS)** is significant because it addresses persistent operational challenges experienced by Philippine school libraries, particularly those operating with limited financial resources, insufficient ICT infrastructure, and dependence on manual management processes. Although school libraries are recognized as essential components of the educational system, many public schools continue to experience difficulties in maintaining efficient circulation systems, accurate inventory records, and accessible library services due to budget limitations, staffing constraints, and the absence of appropriate automation technologies (Linganay, 2022; Ortego, 2016).
 
-Unlike traditional library systems that primarily digitize manual records, SHLMAS redesigns the entire library circulation workflow through automation while maintaining librarian supervision. By evaluating the effectiveness of this system, the study seeks to contribute practical solutions for improving library efficiency, inventory accuracy, and accessibility in educational institutions.
+Existing commercial library automation solutions, including RFID-based systems, have demonstrated improvements in circulation efficiency, inventory management, and user experience. However, their high implementation costs often prevent adoption in resource-constrained educational institutions. SHLMAS contributes a low-cost alternative by applying RFID technology, IoT-based hardware, and digital management tools designed specifically for the operational conditions of Philippine public school libraries. Through this approach, the study may contribute to improving library accessibility, reducing administrative workload, and supporting data-driven decision-making among educational stakeholders.
 
-The findings of this study are expected to benefit the following groups:
+## Students/Learners
 
----
+The study is significant to students because it aims to improve their access to learning resources by creating a faster, more organized, and more user-friendly borrowing process. Traditional manual circulation systems often require students to wait in long queues while librarians record transactions manually, which may discourage frequent library usage and reduce opportunities for students to access educational materials.
 
-# Students
+By introducing an automated circulation system, SHLMAS may provide students with a more efficient method of borrowing and returning books. The system allows learners to interact with library resources through a simplified digital process, reducing transaction delays and improving the overall library experience. According to studies on RFID-based library systems, automated circulation technologies can improve service efficiency, reduce waiting times, and increase user satisfaction by minimizing repetitive manual procedures (Singh & Mahajan, 2017).
 
-Students are the primary beneficiaries of the proposed system.
+Furthermore, SHLMAS may encourage greater student engagement with library resources by improving visibility of available books and maintaining organized borrowing records. Digital tracking of borrowing activities can help students monitor their own library usage and develop responsible borrowing practices. This supports the role of school libraries as active learning environments rather than merely storage areas for books.
 
-The implementation of SHLMAS will allow students to:
+## Teachers
 
-- Search library books before visiting the library.
-- View real-time book availability.
-- Borrow books more quickly through a self-service kiosk.
-- Reserve unavailable books using the online portal.
-- Receive rule-based book recommendations based on previous borrowing patterns.
-- Experience a more organized and efficient library service.
+The study is also significant to teachers because it may support easier access to instructional materials and supplementary learning resources. Teachers often rely on school libraries to obtain references, textbooks, and educational materials that support classroom instruction. However, inefficient circulation processes may create delays when accessing these resources.
 
-These improvements reduce waiting time and make library resources more accessible.
+Through improved catalog management and automated borrowing procedures, SHLMAS may allow teachers to locate available materials more efficiently and reduce administrative delays associated with borrowing transactions. A more organized library environment can help teachers integrate additional learning resources into their lessons and encourage the use of library materials as part of academic activities.
 
----
+Additionally, the availability of digital circulation records may provide teachers and academic coordinators with better awareness of resource availability and usage patterns, allowing them to identify frequently needed materials and recommend future collection improvements.
 
-# Librarians
+## Library Personnel and Library-In-Charge Staff
 
-The proposed system automates repetitive administrative tasks, allowing librarians to focus more on assisting students and managing library resources.
+SHLMAS is particularly significant for library personnel and teachers assigned as library-in-charge, especially those without formal Library and Information Science (LIS) training. Research on Philippine school libraries indicates that many institutions rely on non-LIS personnel due to limited availability of licensed librarians and staffing constraints (Linganay, 2022).
 
-SHLMAS can help librarians by:
+These personnel often experience challenges in maintaining accurate borrowing records, monitoring overdue materials, conducting inventory checks, and preparing library reports. Manual recordkeeping increases the possibility of recording errors, misplaced records, and inefficient use of staff time.
 
-- Reducing manual record keeping.
-- Automatically updating inventory records.
-- Monitoring borrowed and returned books in real time.
-- Generating reports automatically.
-- Tracking overdue and lost books more efficiently.
-- Providing analytics for better collection management.
+By automating circulation monitoring, borrower identification, and reporting processes, SHLMAS may reduce the administrative workload experienced by library managers. Instead of spending significant time maintaining manual records, library personnel may focus more on improving library services, assisting learners, organizing resources, and promoting reading activities.
 
-This may significantly reduce workload while improving the accuracy of library records.
+The study also supports the idea that technology should complement human expertise rather than replace library personnel. SHLMAS provides an accessible management tool that can assist library-in-charge staff in performing essential operations more efficiently.
 
----
+## School Administrators
 
-# Teachers
+The study is significant to school administrators because it provides a potential solution for improving library management while considering the financial limitations commonly experienced by public educational institutions. According to Philippine library assessments, many school libraries struggle to comply fully with national library standards due to inadequate funding, limited facilities, and insufficient technological resources (Ortego, 2016).
 
-Teachers may benefit from improved monitoring of borrowed learning materials.
+SHLMAS may assist administrators in addressing these challenges by providing a lower-cost approach to library automation compared with expensive commercial systems. By utilizing affordable RFID components and open-source technologies, the proposed system demonstrates the possibility of implementing smart library functions without requiring large financial investments.
 
-The system enables teachers to:
+Additionally, the system may provide administrators with useful information regarding library usage, borrowing trends, and resource demands. Access to organized data can support evidence-based decision-making when planning library improvements, purchasing additional resources, and allocating institutional resources.
 
-- View reports of overdue books when necessary.
-- Monitor the availability of instructional materials.
-- Coordinate with librarians regarding overdue borrowers.
-- Support students in responsibly using library resources.
+The study also aligns with the objectives of strengthening ICT integration in education. DepEd Order No. 56, s. 2011 emphasizes the importance of functional school libraries equipped with appropriate resources and services that support learning. SHLMAS may contribute to these objectives by providing technological support for more efficient library operations.
 
----
+## Department of Education and Educational Policymakers
 
-# School Administrators
+At the policy level, this study may provide insights into how affordable technological solutions can support the modernization of Philippine school libraries. While national policies recognize the importance of functional and accessible library services, many schools continue to experience challenges in implementing automation due to financial and infrastructure limitations (DepEd Order No. 56, s. 2011).
 
-The study may assist school administrators by providing reliable data for planning and decision-making.
+SHLMAS demonstrates a possible model for applying frugal innovation principles within educational environments. Instead of relying exclusively on expensive commercial platforms, schools may explore locally adaptable technologies that address their specific operational conditions.
 
-The proposed system offers:
+The findings of this study may help policymakers and education planners understand the potential of low-cost automation systems in improving resource management, supporting digital transformation, and reducing inequalities between schools with different levels of technological access.
 
-- Accurate library utilization statistics.
-- Reports on popular and underutilized books.
-- Inventory status monitoring.
-- Evidence-based information for future book acquisitions.
-- Better accountability for school-owned learning resources.
+## Future Researchers in Educational Technology and Library Science
 
-These reports may improve resource allocation and long-term library planning.
+This study may serve as a reference for future researchers exploring the intersection of educational technology, library science, Internet of Things (IoT), and affordable automation systems. The development of SHLMAS contributes to research on how emerging technologies can be adapted for resource-constrained educational environments.
 
----
+Future studies may build upon this research by investigating improvements in RFID implementation, user acceptance, scalability, cybersecurity, and integration with larger educational information systems. The study may also contribute to discussions regarding technology adoption in schools through frameworks such as the Technology Acceptance Model (TAM), which emphasizes the importance of perceived usefulness and ease of use in determining successful technology adoption (Davis, 1989).
 
-# Future Researchers
+By examining both technological performance and stakeholder experiences, future researchers may develop more effective and sustainable smart library solutions suitable for different educational contexts.
 
-This study may serve as a reference for future research involving:
+# References and Supporting Literature
 
-- Smart library technologies.
-- Library workflow automation.
-- Embedded systems in educational environments.
-- QR code and RFID-based identification systems.
-- Human-computer interaction in school management systems.
-- Educational information systems.
+## Philippine Library Standards and Policy References
 
-Future researchers may further improve the system by integrating emerging technologies such as RFID, cloud synchronization, artificial intelligence, mobile applications, or Internet of Things (IoT) devices.
+**Department of Education. (2011).** *DepEd Order No. 56, s. 2011: Standards for Philippine Libraries.*
 
----
+Link:
+https://www.deped.gov.ph/
 
-# Educational Institutions
+**Republic Act No. 9246. (2004).** *Philippine Librarianship Act of 2004.*
 
-Schools with limited budgets often find commercial Library Management Systems expensive or difficult to customize.
+Link:
+https://lawphil.net/statutes/repacts/ra2004/ra_9246_2004.html
 
-Because SHLMAS uses affordable technologies such as QR codes, web applications, and low-cost embedded devices, the system has the potential to become a practical and scalable solution for public and private educational institutions seeking to modernize their library operations.
 
----
+## Philippine School Library Studies
 
-# Contribution to Library Automation
+**Linganay, M. (2022).** *Library Management Practices in Public Schools in Lanao del Norte.*
 
-This study contributes to the growing field of library automation by demonstrating that workflow redesign can be more impactful than simply replacing paper records with digital records.
+ResearchGate:
+https://www.researchgate.net/
 
-Rather than functioning solely as a digital logbook, SHLMAS integrates multiple components into a unified ecosystem that supports:
+**Ortego, R. (2016).** *Status of the Libraries in the First and Second Legislative Districts of Leyte.*
 
-- Self-service borrowing
-- Automated book returns
-- Centralized inventory management
-- Automated reporting
-- Data analytics
-- Rule-based recommendation systems
+ResearchGate:
+https://www.researchgate.net/
 
-This integrated approach demonstrates how affordable technologies can improve operational efficiency without requiring expensive commercial software or complex infrastructure.
 
----
+## Technology Adoption and Library Automation Studies
 
-# Overall Significance
+**Davis, F. D. (1989).** Perceived usefulness, perceived ease of use, and user acceptance of information technology.
 
-Ultimately, this research seeks to demonstrate that implementing a Smart Hybrid Library Management and Automation System can significantly improve the efficiency, accuracy, accessibility, and overall management of school library circulation.
+Link:
+https://doi.org/10.2307/249008
 
-The results of this study may encourage educational institutions to adopt practical, technology-driven solutions that enhance library services while reducing administrative workload and improving the overall learning experience of students.
+
+**Singh, N., & Mahajan, P. (2017).** RFID and Library Services: Use and Concerns.
+
+Link:
+http://vidyamandira.ac.in/pdfs/publications/seminar_Proceeding/RFID%20and%20Library%20Services%20(Library%202017).pdf
+
+
+**Self Service System for Library Automation: Case Study at Telkom University Open Library.**
+
+ResearchGate:
+https://www.researchgate.net/publication/338362553_Self_Service_System_for_Library_Automation_Case_Study_at_Telkom_University_Open_Library
+
+
+**Smart University Library Management System Based on Internet of Things.**
+
+ResearchGate:
+https://www.researchgate.net/publication/346724048_Smart_University_Library_Management_System_Based_on_Internet_of_Things
